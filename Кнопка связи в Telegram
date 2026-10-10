@@ -1,0 +1,33 @@
+import React from 'react';
+
+export default function TelegramContact() {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '20px 0', fontFamily: 'sans-serif' }}>
+      <span style={{ fontWeight: '500', color: '#fff' }}>Обратиться за помощью:</span>
+      <a 
+        href="https://t.me/khs_ms" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '6px',
+          backgroundColor: '#229ED9',
+          color: 'white',
+          padding: '8px 14px',
+          borderRadius: '20px',
+          text-decoration: 'none',
+          fontWeight: 'bold',
+          transition: '0.3s'
+        }}
+        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#1c82b3'}
+        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#229ED9'}
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 9.38 13.78 20.21 13.4 21.62C13.25 22.18 12.83 22.25 12.44 21.9C11.66 21.19 9.8 19.55 8.95 18.82C8.54 18.47 8.59 18.15 8.92 17.84L13.88 13.21C14.12 12.98 14.12 12.75 13.82 12.93C13.51 13.11 8.86 16.03 8.04 16.54L5.61 15.76C5.07 15.58 5.04 15.22 5.73 14.95L15.65 11.01C16.14 10.82 16.6 11.13 16.64 11.8V8.8Z" fill="currentColor"/>
+        </svg>
+        @khs_ms
+      </a>
+    </div>
+  );
+}
