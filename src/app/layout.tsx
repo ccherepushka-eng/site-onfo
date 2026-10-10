@@ -5,6 +5,7 @@ import "./globals.css";
 import { ProgressProvider } from "@/components/ProgressProvider";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 // Дисплейный и текстовый шрифты с поддержкой кириллицы
 const display = Unbounded({
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </main>
           <Footer />
         </ProgressProvider>
+        <Analytics />
       </body>
     </html>
   );
