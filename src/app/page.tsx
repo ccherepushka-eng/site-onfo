@@ -205,6 +205,36 @@ export default function HomePage() {
           </div>
         </Reveal>
       </section>
+{/* ======================= ОБРАТИТЬСЯ ЗА ПОМОЩЬЮ ======================= */}
+      <section className="wrap mt-20 mb-12">
+        <Reveal>
+          <div
+            className="relative overflow-hidden rounded-[28px] p-8 md:p-12 text-center"
+            style={{
+              background:
+                "linear-gradient(130deg, rgba(34,158,217,.16), rgba(91,140,255,.18))",
+              border: "1px solid var(--line-2)",
+            }}
+          >
+            <h2 className="h2">Нужна помощь?</h2>
+
+            <p className="lead mt-4 max-w-xl mx-auto text-base!">
+              Остались вопросы по информатике или учебным материалам?
+              Напиши мне в Telegram — постараюсь помочь!
+            </p>
+
+            <a
+              href="https://t.me/khs_ms"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-prime px-9! py-4! text-base! mt-8 inline-flex items-center gap-2"
+            >
+              Обратиться за помощью
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </Reveal>
+      </section>
     </>
   );
 }
